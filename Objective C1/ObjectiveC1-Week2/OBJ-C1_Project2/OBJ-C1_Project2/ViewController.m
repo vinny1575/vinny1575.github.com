@@ -103,9 +103,9 @@
     //Summary Text label***
     
     //nsarray
-    
     NSArray *fiveItems = [[NSArray alloc] initWithObjects:@"Wizards ", @"Witches ", @"Sorcerer's ", @"Magic ", @"Friends ", nil];
     
+    //loop through array and sppend string
     NSMutableString *itemsTogether = [[NSMutableString alloc] init];
     for (NSString *item in fiveItems) {
         [itemsTogether appendString:item];
