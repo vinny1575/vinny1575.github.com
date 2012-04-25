@@ -15,6 +15,7 @@
 		9709DB0215489069001317A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9709DB0115489069001317A7 /* AppDelegate.m */; };
 		9709DB0515489069001317A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9709DB0415489069001317A7 /* ViewController.m */; };
 		9709DB0815489069001317A7 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9709DB0615489069001317A7 /* ViewController.xib */; };
+		9709DB0F154896B1001317A7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9709DB0E154896B1001317A7 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		9709DB0315489069001317A7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9709DB0415489069001317A7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9709DB0715489069001317A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		9709DB0E154896B1001317A7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9709DB0F154896B1001317A7 /* QuartzCore.framework in Frameworks */,
 				9709DAF215489069001317A7 /* UIKit.framework in Frameworks */,
 				9709DAF415489069001317A7 /* Foundation.framework in Frameworks */,
 				9709DAF615489069001317A7 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +53,7 @@
 		9709DAE215489069001317A7 = {
 			isa = PBXGroup;
 			children = (
+				9709DB0E154896B1001317A7 /* QuartzCore.framework */,
 				9709DAF715489069001317A7 /* ObjC1-Week4 */,
 				9709DAF015489069001317A7 /* Frameworks */,
 				9709DAEE15489069001317A7 /* Products */,

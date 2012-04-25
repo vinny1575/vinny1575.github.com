@@ -45,7 +45,6 @@
     //date button
     UIButton *dateBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [dateBtn setFrame:CGRectMake(10, 200, 100, 40)];
-    [dateBtn setBackgroundColor:[UIColor orangeColor]];
     [dateBtn setTitle:@"Show Date" forState:UIControlStateNormal];
     [dateBtn setTag:1];
     [dateBtn addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -66,7 +65,16 @@
             pleaseEnter.text = [NSString stringWithFormat:@"User: %@ has been logged in.", userNameTxt.text];
         }
     }else if(sender.tag == 1){
+        NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+        [dateFormat setDateFormat:@"MMMM dd, YYYY HH:MM:SS a zzzz"];
         
+        //date and date formatter
+        NSDate *now = [[NSDate alloc] init];
+        
+        NSString *theDate = [dateFormat stringFromDate:now];
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Date" message:theDate delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alert show];
     }
 }
 
