@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    UITextField *userNameTxt;
+    UILabel *pleaseEnter;
+}
 
-- (void)onClick;
+- (void)onClick:(UIButton*)sender;
 @end

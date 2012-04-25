@@ -23,16 +23,18 @@
     userName.text = @"Username:";
     [userName setBackgroundColor:[UIColor clearColor]];
     [self.view addSubview:userName];
-    UITextField *userNameTxt = [[UITextField alloc] initWithFrame:CGRectMake(120, 10, 200, 40)];
+    userNameTxt = [[UITextField alloc] initWithFrame:CGRectMake(120, 10, 200, 40)];
     [userNameTxt setBorderStyle:UITextBorderStyleRoundedRect];
     [self.view addSubview:userNameTxt];
     UIButton *buttonLogin = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [buttonLogin setFrame:CGRectMake(220, 60, 100, 40)];
+    [buttonLogin setTag:0];
     [buttonLogin setTitle:@"Login" forState:UIControlStateNormal];
-    [buttonLogin addTarget:self action:@selector(onClick) forControlEvents:UIControlEventTouchUpInside];
+    [buttonLogin addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:buttonLogin];
     
-    UILabel *pleaseEnter = [[UILabel alloc] initWithFrame:CGRectMake(0, 120, 320, 80)];
+    //gray label with login notification
+    pleaseEnter = [[UILabel alloc] initWithFrame:CGRectMake(0, 120, 320, 80)];
     pleaseEnter.text = @"Please Enter Username";
     [pleaseEnter setTextColor:[UIColor blueColor]];
     [pleaseEnter setTextAlignment:UITextAlignmentCenter];
@@ -44,7 +46,17 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
--(void)onClick
+-(void)onClick:(UIButton *)sender{
+    if(sender.tag == 0){
+        if (userNameTxt.text.length == 0) {
+            pleaseEnter.text = @"Username Cannot Be Empty.";
+        }else {
+            pleaseEnter.text = [NSString stringWithFormat:@"User: %@ has been logged in.", userNameTxt.text];
+        }
+    }else if(sender.tag == 1){
+        
+    }
+}
 
 - (void)viewDidUnload
 {
