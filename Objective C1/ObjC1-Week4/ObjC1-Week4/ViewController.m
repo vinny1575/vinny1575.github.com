@@ -19,6 +19,7 @@
     
     [self.view setBackgroundColor:[UIColor whiteColor]];
     
+    //ui elements
     UILabel *userName = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 120, 40)];
     userName.text = @"Username:";
     [userName setBackgroundColor:[UIColor clearColor]];
@@ -41,6 +42,16 @@
     [pleaseEnter setBackgroundColor:[UIColor lightGrayColor]];
     [self.view addSubview:pleaseEnter];
     
+    //date button
+    UIButton *dateBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [dateBtn setFrame:CGRectMake(10, 200, 100, 40)];
+    [dateBtn setBackgroundColor:[UIColor orangeColor]];
+    [dateBtn setTitle:@"Show Date" forState:UIControlStateNormal];
+    [dateBtn setTag:1];
+    [dateBtn addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:dateBtn];
+    
+    
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -48,6 +59,7 @@
 
 -(void)onClick:(UIButton *)sender{
     if(sender.tag == 0){
+        //check the length of the username field
         if (userNameTxt.text.length == 0) {
             pleaseEnter.text = @"Username Cannot Be Empty.";
         }else {
