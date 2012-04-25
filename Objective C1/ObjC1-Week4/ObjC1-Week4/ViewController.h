@@ -12,6 +12,7 @@
 @interface ViewController : UIViewController{
     UITextField *userNameTxt;
     UILabel *pleaseEnter;
+    UILabel *infoLabel;
 }
 
 - (void)onClick:(UIButton*)sender;

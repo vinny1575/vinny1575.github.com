@@ -44,13 +44,23 @@
     
     //date button
     UIButton *dateBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [dateBtn setFrame:CGRectMake(10, 200, 100, 40)];
+    [dateBtn setFrame:CGRectMake(10, 220, 100, 40)];
     [dateBtn setTitle:@"Show Date" forState:UIControlStateNormal];
     [dateBtn setTag:1];
     [dateBtn addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:dateBtn];
     
+    //info button
+    UIButton *infoBtn = [UIButton buttonWithType:UIButtonTypeInfoDark];
+    [infoBtn setFrame:CGRectMake(10, 300, 30, 30)];
+    [infoBtn addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [infoBtn setTag:3];
+    [self.view addSubview:infoBtn];
     
+    //blank label
+    infoLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 330, 320, 100)];
+    [infoLabel setNumberOfLines:2];
+    [self.view addSubview:infoLabel];
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -75,6 +85,8 @@
         
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Date" message:theDate delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
+    }else{
+        [infoLabel setText:@"This application was written by Alan Gonzalez"];
     }
 }
 
