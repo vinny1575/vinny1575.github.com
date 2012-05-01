@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *shape1;
+@property (strong, nonatomic) IBOutlet UILabel *area1;
+@property (strong, nonatomic) IBOutlet UILabel *shape2;
+@property (strong, nonatomic) IBOutlet UILabel *area2;
+@property (strong, nonatomic) IBOutlet UILabel *shape3;
+@property (strong, nonatomic) IBOutlet UILabel *area3;
 
 @end

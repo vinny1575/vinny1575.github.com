@@ -13,6 +13,8 @@
 @end
 
 @implementation ViewController
+@synthesize shape1;
+@synthesize area1;
 
 - (void)viewDidLoad
 {
@@ -22,6 +24,8 @@
 
 - (void)viewDidUnload
 {
+    [self setShape1:nil];
+    [self setArea1:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
