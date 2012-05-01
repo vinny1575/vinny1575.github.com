@@ -19,14 +19,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //triangle class
     TriangleClass *triangle = [ShapeFactory createShape:1];
     shape1.text = [triangle GetName];
     area1.text = [NSString stringWithFormat:@"%d", [triangle GetArea]];
     
+    //square class
     SquareClass *square = [ShapeFactory createShape:0];
     shape2.text = [square GetName];
     area2.text = [NSString stringWithFormat:@"%d", [square GetArea]];
     
+    //rectangle class
     RectangleClass *rectangle = [ShapeFactory createShape:2];
     shape3.text = [rectangle GetName];
     area3.text = [NSString stringWithFormat:@"%d", [rectangle GetArea]];

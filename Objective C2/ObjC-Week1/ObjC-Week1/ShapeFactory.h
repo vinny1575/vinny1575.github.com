@@ -13,6 +13,7 @@
 
 @interface ShapeFactory : NSObject
 
+//static method
 +(id)createShape:(NSInteger)index;
 
 @end

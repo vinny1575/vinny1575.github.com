@@ -10,6 +10,7 @@
 
 @implementation ShapeFactory
 
+//creates an instance of each shape class
 +(id)createShape:(NSInteger)index{
     if (index == 0) {
         return [[SquareClass alloc] init];
