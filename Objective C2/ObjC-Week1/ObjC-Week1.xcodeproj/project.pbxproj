@@ -19,6 +19,7 @@
 		9798B1E9155066830021DB02 /* TriangleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9798B1E8155066830021DB02 /* TriangleClass.m */; };
 		9798B1EC155066960021DB02 /* SquareClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9798B1EB155066960021DB02 /* SquareClass.m */; };
 		9798B1EF155066A90021DB02 /* RectangleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9798B1EE155066A90021DB02 /* RectangleClass.m */; };
+		9798B1F215506AFD0021DB02 /* ShapeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9798B1F115506AFD0021DB02 /* ShapeFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		9798B1EB155066960021DB02 /* SquareClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareClass.m; sourceTree = "<group>"; };
 		9798B1ED155066A90021DB02 /* RectangleClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectangleClass.h; sourceTree = "<group>"; };
 		9798B1EE155066A90021DB02 /* RectangleClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectangleClass.m; sourceTree = "<group>"; };
+		9798B1F015506AFD0021DB02 /* ShapeFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeFactory.h; sourceTree = "<group>"; };
+		9798B1F115506AFD0021DB02 /* ShapeFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,8 @@
 				9798B1EB155066960021DB02 /* SquareClass.m */,
 				9798B1ED155066A90021DB02 /* RectangleClass.h */,
 				9798B1EE155066A90021DB02 /* RectangleClass.m */,
+				9798B1F015506AFD0021DB02 /* ShapeFactory.h */,
+				9798B1F115506AFD0021DB02 /* ShapeFactory.m */,
 				9798B1C5154F44E10021DB02 /* Supporting Files */,
 			);
 			path = "ObjC-Week1";
@@ -187,6 +192,7 @@
 				9798B1E9155066830021DB02 /* TriangleClass.m in Sources */,
 				9798B1EC155066960021DB02 /* SquareClass.m in Sources */,
 				9798B1EF155066A90021DB02 /* RectangleClass.m in Sources */,
+				9798B1F215506AFD0021DB02 /* ShapeFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
