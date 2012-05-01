@@ -19,7 +19,9 @@
     return self;
 }
 
+//ovveride getarea
 - (int)GetArea{
+    //0.5f (base *height)
     return 0.5f * (10 *5);
 }
 @end

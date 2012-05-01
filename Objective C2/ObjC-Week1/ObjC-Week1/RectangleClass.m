@@ -10,4 +10,19 @@
 
 @implementation RectangleClass
 
+- (id)init{
+    self = [super init];
+    if (self) {
+        numSides = 4;
+        name = @"rectangle";
+    }
+    return self;
+}
+
+//overide getarea
+-(int)GetArea{
+    //base * height
+    return 30 * 15;
+}
+
 @end
