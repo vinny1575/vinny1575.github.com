@@ -7,6 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ShapeFactory.h"
+#import "TriangleClass.h"
+#import "SquareClass.h"
+#import "RectangleClass.h"
 
 @interface ViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *shape1;
