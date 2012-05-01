@@ -13,8 +13,8 @@
 @end
 
 @implementation ViewController
-@synthesize shape1;
-@synthesize area1;
+@synthesize shape1, shape2, shape3;
+@synthesize area1, area2, area3;
 
 - (void)viewDidLoad
 {

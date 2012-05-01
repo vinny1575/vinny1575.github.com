@@ -10,4 +10,15 @@
 
 @implementation ShapeFactory
 
++(id)createShape:(NSInteger)index{
+    if (index == 0) {
+        return [[SquareClass alloc] init];
+    }else if (index == 1) {
+        return [[TriangleClass alloc] init];
+    }else {
+        return [[RectangleClass alloc] init];
+    }
+}
+
+
 @end
