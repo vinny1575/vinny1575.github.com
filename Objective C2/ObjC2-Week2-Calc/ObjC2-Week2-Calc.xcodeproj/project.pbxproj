@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9779BC95155BF33700BEF032 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9779BC94155BF33700BEF032 /* UIKit.framework */; };
+		9779BC97155BF33700BEF032 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9779BC96155BF33700BEF032 /* Foundation.framework */; };
+		9779BC99155BF33700BEF032 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9779BC98155BF33700BEF032 /* CoreGraphics.framework */; };
+		9779BC9F155BF33700BEF032 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9779BC9D155BF33700BEF032 /* InfoPlist.strings */; };
+		9779BCA1155BF33700BEF032 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9779BCA0155BF33700BEF032 /* main.m */; };
+		9779BCA5155BF33700BEF032 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9779BCA4155BF33700BEF032 /* AppDelegate.m */; };
+		9779BCA8155BF33700BEF032 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9779BCA7155BF33700BEF032 /* ViewController.m */; };
+		9779BCAB155BF33700BEF032 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9779BCA9155BF33700BEF032 /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9779BC90155BF33700BEF032 /* ObjC2-Week2-Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ObjC2-Week2-Calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9779BC94155BF33700BEF032 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9779BC96155BF33700BEF032 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9779BC98155BF33700BEF032 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9779BC9C155BF33700BEF032 /* ObjC2-Week2-Calc-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObjC2-Week2-Calc-Info.plist"; sourceTree = "<group>"; };
+		9779BC9E155BF33700BEF032 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9779BCA0155BF33700BEF032 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9779BCA2155BF33700BEF032 /* ObjC2-Week2-Calc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjC2-Week2-Calc-Prefix.pch"; sourceTree = "<group>"; };
+		9779BCA3155BF33700BEF032 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9779BCA4155BF33700BEF032 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9779BCA6155BF33700BEF032 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9779BCA7155BF33700BEF032 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9779BCAA155BF33700BEF032 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9779BC8D155BF33700BEF032 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9779BC95155BF33700BEF032 /* UIKit.framework in Frameworks */,
+				9779BC97155BF33700BEF032 /* Foundation.framework in Frameworks */,
+				9779BC99155BF33700BEF032 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9779BC85155BF33700BEF032 = {
+			isa = PBXGroup;
+			children = (
+				9779BC9A155BF33700BEF032 /* ObjC2-Week2-Calc */,
+				9779BC93155BF33700BEF032 /* Frameworks */,
+				9779BC91155BF33700BEF032 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9779BC91155BF33700BEF032 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9779BC90155BF33700BEF032 /* ObjC2-Week2-Calc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9779BC93155BF33700BEF032 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9779BC94155BF33700BEF032 /* UIKit.framework */,
+				9779BC96155BF33700BEF032 /* Foundation.framework */,
+				9779BC98155BF33700BEF032 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9779BC9A155BF33700BEF032 /* ObjC2-Week2-Calc */ = {
+			isa = PBXGroup;
+			children = (
+				9779BCA3155BF33700BEF032 /* AppDelegate.h */,
+				9779BCA4155BF33700BEF032 /* AppDelegate.m */,
+				9779BCA6155BF33700BEF032 /* ViewController.h */,
+				9779BCA7155BF33700BEF032 /* ViewController.m */,
+				9779BCA9155BF33700BEF032 /* ViewController.xib */,
+				9779BC9B155BF33700BEF032 /* Supporting Files */,
+			);
+			path = "ObjC2-Week2-Calc";
+			sourceTree = "<group>";
+		};
+		9779BC9B155BF33700BEF032 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9779BC9C155BF33700BEF032 /* ObjC2-Week2-Calc-Info.plist */,
+				9779BC9D155BF33700BEF032 /* InfoPlist.strings */,
+				9779BCA0155BF33700BEF032 /* main.m */,
+				9779BCA2155BF33700BEF032 /* ObjC2-Week2-Calc-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9779BC8F155BF33700BEF032 /* ObjC2-Week2-Calc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9779BCAE155BF33700BEF032 /* Build configuration list for PBXNativeTarget "ObjC2-Week2-Calc" */;
+			buildPhases = (
+				9779BC8C155BF33700BEF032 /* Sources */,
+				9779BC8D155BF33700BEF032 /* Frameworks */,
+				9779BC8E155BF33700BEF032 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ObjC2-Week2-Calc";
+			productName = "ObjC2-Week2-Calc";
+			productReference = 9779BC90155BF33700BEF032 /* ObjC2-Week2-Calc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9779BC87155BF33700BEF032 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 9779BC8A155BF33700BEF032 /* Build configuration list for PBXProject "ObjC2-Week2-Calc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9779BC85155BF33700BEF032;
+			productRefGroup = 9779BC91155BF33700BEF032 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9779BC8F155BF33700BEF032 /* ObjC2-Week2-Calc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9779BC8E155BF33700BEF032 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9779BC9F155BF33700BEF032 /* InfoPlist.strings in Resources */,
+				9779BCAB155BF33700BEF032 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9779BC8C155BF33700BEF032 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9779BCA1155BF33700BEF032 /* main.m in Sources */,
+				9779BCA5155BF33700BEF032 /* AppDelegate.m in Sources */,
+				9779BCA8155BF33700BEF032 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9779BC9D155BF33700BEF032 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9779BC9E155BF33700BEF032 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9779BCA9155BF33700BEF032 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9779BCAA155BF33700BEF032 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9779BCAC155BF33700BEF032 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9779BCAD155BF33700BEF032 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9779BCAF155BF33700BEF032 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjC2-Week2-Calc/ObjC2-Week2-Calc-Prefix.pch";
+				INFOPLIST_FILE = "ObjC2-Week2-Calc/ObjC2-Week2-Calc-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9779BCB0155BF33700BEF032 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjC2-Week2-Calc/ObjC2-Week2-Calc-Prefix.pch";
+				INFOPLIST_FILE = "ObjC2-Week2-Calc/ObjC2-Week2-Calc-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9779BC8A155BF33700BEF032 /* Build configuration list for PBXProject "ObjC2-Week2-Calc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9779BCAC155BF33700BEF032 /* Debug */,
+				9779BCAD155BF33700BEF032 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9779BCAE155BF33700BEF032 /* Build configuration list for PBXNativeTarget "ObjC2-Week2-Calc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9779BCAF155BF33700BEF032 /* Debug */,
+				9779BCB0155BF33700BEF032 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9779BC87155BF33700BEF032 /* Project object */;
+}
