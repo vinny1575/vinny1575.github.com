@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "InfoView.h"
 
 @interface ViewController ()
 
@@ -39,6 +40,8 @@
     UISwitch *mySwitch = sender;
     if (mySwitch.isOn) {
         active = YES;
+        [numbers removeAllObjects];
+        [resultsField setText:@""];
     }else{
         active = NO;
     }
@@ -128,6 +131,9 @@
             solution += num.intValue;
         }
         resultsField.text = [NSString stringWithFormat:@"%d", solution];
+        
+        //remove objects so solution can be used.
+        [numbers removeAllObjects];
     }
 }
 
@@ -139,7 +145,10 @@
 }
 
 - (IBAction)info:(id)sender {
+    InfoView *info = [[InfoView alloc] initWithNibName:@"InfoView" bundle:nil];
+    [self presentModalViewController:info animated:YES];
 }
+
 - (IBAction)bgSegCntrl:(id)sender {
     UISegmentedControl *seg = sender;
     switch (seg.selectedSegmentIndex) {
