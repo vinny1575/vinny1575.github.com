@@ -106,9 +106,12 @@
 }
 
 - (IBAction)plus:(id)sender {
-    if (active) {
+    if (active) {        
         NSNumber *number = [NSNumber numberWithInt:resultsField.text.intValue];
         [numbers addObject:number];
+        
+        //clear field
+        resultsField.text = @"";
     }
 }
 //End Numbers
@@ -121,6 +124,7 @@
         
         int solution = 0;
         for (NSNumber *num in numbers) {
+            NSLog(@"%d", num.intValue);
             solution += num.intValue;
         }
         resultsField.text = [NSString stringWithFormat:@"%d", solution];
