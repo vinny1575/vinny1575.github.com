@@ -132,6 +132,10 @@
 }
 
 - (IBAction)clear:(id)sender {
+    if (active){
+        [numbers removeAllObjects];
+        [resultsField setText:@""];
+    }
 }
 
 - (IBAction)info:(id)sender {
