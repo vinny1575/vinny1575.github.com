@@ -141,5 +141,20 @@
 - (IBAction)info:(id)sender {
 }
 - (IBAction)bgSegCntrl:(id)sender {
+    UISegmentedControl *seg = sender;
+    switch (seg.selectedSegmentIndex) {
+        case 0:
+            self.view.backgroundColor = [UIColor whiteColor];
+            break;
+        case 1:
+            self.view.backgroundColor = [UIColor blueColor];
+            break;
+        case 2:
+            self.view.backgroundColor = [UIColor greenColor];
+            break;
+            
+        default:
+            break;
+    }
 }
 @end

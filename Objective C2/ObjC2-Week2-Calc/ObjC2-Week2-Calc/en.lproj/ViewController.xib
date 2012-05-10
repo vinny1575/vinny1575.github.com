@@ -440,7 +440,7 @@
 						<reference key="IBUIFontDescription" ref="459098736"/>
 						<reference key="IBUIFont" ref="163561163"/>
 					</object>
-					<object class="IBUITextField" id="802129175">
+					<object class="IBUITextField" id="472832775">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{20, 20}, {280, 31}}</string>
@@ -502,7 +502,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">resultsField</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="802129175"/>
+						<reference key="destination" ref="472832775"/>
 					</object>
 					<int key="connectionID">69</int>
 				</object>
@@ -691,7 +691,7 @@
 							<reference ref="434885702"/>
 							<reference ref="204020563"/>
 							<reference ref="451886788"/>
-							<reference ref="802129175"/>
+							<reference ref="472832775"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -782,7 +782,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">68</int>
-						<reference key="object" ref="802129175"/>
+						<reference key="object" ref="472832775"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 				</array>
