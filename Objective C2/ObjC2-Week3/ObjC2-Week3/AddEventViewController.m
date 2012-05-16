@@ -46,20 +46,25 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+
 - (IBAction)saveBtn:(id)sender {
+    //check if date is now or later
     if ([datePicker.date isEqualToDate:[NSDate date]] || [datePicker.date compare:[NSDate date]] == NSOrderedDescending) {
         NSDate *date = datePicker.date;
         NSString *dateString = [date description];
         NSString *returnString = [NSString stringWithFormat:@"\n\nNew Event: %@ \n%@", eventTextFld.text, dateString];
+        //calls delegate method in previous viewcontroller to add text.
         [delegate eventAdded:returnString];
         [self dismissModalViewControllerAnimated:YES];
     }else{
+        //alert if date is earlier then now.
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Date" message:@"Date needs to be now or in the future."  delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
     }
     
 }
 
+//close keyboard
 - (IBAction)closeKbrdBtn:(id)sender {
     [eventTextFld resignFirstResponder];
 }
