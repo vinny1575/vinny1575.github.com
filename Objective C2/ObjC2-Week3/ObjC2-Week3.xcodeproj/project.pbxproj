@@ -15,6 +15,8 @@
 		970C0DEA15633D9000B9D4B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 970C0DE915633D9000B9D4B2 /* AppDelegate.m */; };
 		970C0DED15633D9000B9D4B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 970C0DEC15633D9000B9D4B2 /* ViewController.m */; };
 		970C0DF015633D9000B9D4B2 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 970C0DEE15633D9000B9D4B2 /* ViewController.xib */; };
+		970C0DF915633F9D00B9D4B2 /* AddEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 970C0DF715633F9D00B9D4B2 /* AddEventViewController.m */; };
+		970C0DFA15633F9D00B9D4B2 /* AddEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 970C0DF815633F9D00B9D4B2 /* AddEventViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,9 @@
 		970C0DEB15633D9000B9D4B2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		970C0DEC15633D9000B9D4B2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		970C0DEF15633D9000B9D4B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		970C0DF615633F9D00B9D4B2 /* AddEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventViewController.h; sourceTree = "<group>"; };
+		970C0DF715633F9D00B9D4B2 /* AddEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventViewController.m; sourceTree = "<group>"; };
+		970C0DF815633F9D00B9D4B2 /* AddEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddEventViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +87,9 @@
 				970C0DEB15633D9000B9D4B2 /* ViewController.h */,
 				970C0DEC15633D9000B9D4B2 /* ViewController.m */,
 				970C0DEE15633D9000B9D4B2 /* ViewController.xib */,
+				970C0DF615633F9D00B9D4B2 /* AddEventViewController.h */,
+				970C0DF715633F9D00B9D4B2 /* AddEventViewController.m */,
+				970C0DF815633F9D00B9D4B2 /* AddEventViewController.xib */,
 				970C0DE015633D9000B9D4B2 /* Supporting Files */,
 			);
 			path = "ObjC2-Week3";
@@ -150,6 +158,7 @@
 			files = (
 				970C0DE415633D9000B9D4B2 /* InfoPlist.strings in Resources */,
 				970C0DF015633D9000B9D4B2 /* ViewController.xib in Resources */,
+				970C0DFA15633F9D00B9D4B2 /* AddEventViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +172,7 @@
 				970C0DE615633D9000B9D4B2 /* main.m in Sources */,
 				970C0DEA15633D9000B9D4B2 /* AppDelegate.m in Sources */,
 				970C0DED15633D9000B9D4B2 /* ViewController.m in Sources */,
+				970C0DF915633F9D00B9D4B2 /* AddEventViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

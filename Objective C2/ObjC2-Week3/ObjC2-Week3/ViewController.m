@@ -7,12 +7,18 @@
 //
 
 #import "ViewController.h"
+#import "AddEventViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <EventDelegate>
 
 @end
 
 @implementation ViewController
+
+//delegate method
+-(void)addEvent:(NSString *)event{
+    
+}
 
 - (void)viewDidLoad
 {
