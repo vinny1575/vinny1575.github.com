@@ -6,14 +6,14 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "EventsViewController.h"
 #import "AddEventViewController.h"
 
-@interface ViewController () <EventDelegate>
+@interface EventsViewController () <EventDelegate>
 
 @end
 
-@implementation ViewController
+@implementation EventsViewController
 
 //delegate method
 @synthesize eventsTxtView;

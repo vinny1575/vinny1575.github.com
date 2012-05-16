@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface EventsViewController : UIViewController
 
 - (IBAction)addEvent:(id)sender;
 @property (strong, nonatomic) IBOutlet UITextView *eventsTxtView;
