@@ -13,6 +13,9 @@
 @end
 
 @implementation AddEventViewController
+@synthesize eventTextFld;
+@synthesize datePicker;
+@synthesize delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,6 +34,8 @@
 
 - (void)viewDidUnload
 {
+    [self setEventTextFld:nil];
+    [self setDatePicker:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -41,4 +46,21 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (IBAction)saveBtn:(id)sender {
+    if ([datePicker.date isEqualToDate:[NSDate date]] || [datePicker.date compare:[NSDate date]] == NSOrderedDescending) {
+        NSDate *date = datePicker.date;
+        NSString *dateString = [date description];
+        NSString *returnString = [NSString stringWithFormat:@"\n\nNew Event: %@ \n%@", eventTextFld.text, dateString];
+        [delegate eventAdded:returnString];
+        [self dismissModalViewControllerAnimated:YES];
+    }else{
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Date" message:@"Date needs to be now or in the future."  delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alert show];
+    }
+    
+}
+
+- (IBAction)closeKbrdBtn:(id)sender {
+    [eventTextFld resignFirstResponder];
+}
 @end

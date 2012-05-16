@@ -10,4 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)addEvent:(id)sender;
+@property (strong, nonatomic) IBOutlet UITextView *eventsTxtView;
+
 @end

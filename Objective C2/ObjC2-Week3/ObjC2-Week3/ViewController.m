@@ -16,8 +16,9 @@
 @implementation ViewController
 
 //delegate method
--(void)addEvent:(NSString *)event{
-    
+@synthesize eventsTxtView;
+-(void)eventAdded:(NSString *)event{
+    eventsTxtView.text = [eventsTxtView.text stringByAppendingString:event];
 }
 
 - (void)viewDidLoad
@@ -28,6 +29,7 @@
 
 - (void)viewDidUnload
 {
+    [self setEventsTxtView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -35,6 +37,12 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+- (IBAction)addEvent:(id)sender {
+    AddEventViewController *addEvent = [AddEventViewController new];
+    addEvent.delegate = self;
+    [self presentModalViewController:addEvent animated:YES];
 }
 
 @end
