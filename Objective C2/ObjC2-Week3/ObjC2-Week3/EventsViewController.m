@@ -39,6 +39,7 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+//add event and set viewcontroller as delegate
 - (IBAction)addEvent:(id)sender {
     AddEventViewController *addEvent = [AddEventViewController new];
     addEvent.delegate = self;
