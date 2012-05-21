@@ -46,4 +46,7 @@
     [self presentModalViewController:addEvent animated:YES];
 }
 
+- (IBAction)saveBtn:(id)sender {
+    
+}
 @end

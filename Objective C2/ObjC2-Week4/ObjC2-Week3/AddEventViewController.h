@@ -15,7 +15,7 @@
 @interface AddEventViewController : UIViewController
 @property (nonatomic, weak) id <EventDelegate> delegate;
 
-- (IBAction)saveBtn:(id)sender;
+- (IBAction)saveSwipe:(id)sender;
 - (IBAction)closeKbrdBtn:(id)sender;
 @property (strong, nonatomic) IBOutlet UITextField *eventTextFld;
 @property (strong, nonatomic) IBOutlet UIDatePicker *datePicker;

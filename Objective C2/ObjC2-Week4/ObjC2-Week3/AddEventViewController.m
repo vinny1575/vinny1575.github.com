@@ -47,7 +47,7 @@
 }
 
 
-- (IBAction)saveBtn:(id)sender {
+- (IBAction)saveSwipe:(id)sender {
     //check if date is now or later
     if ([datePicker.date isEqualToDate:[NSDate date]] || [datePicker.date compare:[NSDate date]] == NSOrderedDescending) {
         NSDate *date = datePicker.date;

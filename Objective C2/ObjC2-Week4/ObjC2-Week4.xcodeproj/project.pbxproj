@@ -20,17 +20,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		970C0DD515633D9000B9D4B2 /* ObjC2-Week3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ObjC2-Week3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		970C0DD515633D9000B9D4B2 /* ObjC2-Week4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ObjC2-Week4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		970C0DD915633D9000B9D4B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		970C0DDB15633D9000B9D4B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		970C0DDD15633D9000B9D4B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		970C0DE115633D9000B9D4B2 /* ObjC2-Week3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObjC2-Week3-Info.plist"; sourceTree = "<group>"; };
+		970C0DE115633D9000B9D4B2 /* ObjC2-Week4-Info.plist */ = {isa = PBXFileReference; path = "ObjC2-Week4-Info.plist"; sourceTree = "<group>"; };
 		970C0DE315633D9000B9D4B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		970C0DE515633D9000B9D4B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		970C0DE715633D9000B9D4B2 /* ObjC2-Week3-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjC2-Week3-Prefix.pch"; sourceTree = "<group>"; };
+		970C0DE715633D9000B9D4B2 /* ObjC2-Week4-Prefix.pch */ = {isa = PBXFileReference; path = "ObjC2-Week4-Prefix.pch"; sourceTree = "<group>"; };
 		970C0DE815633D9000B9D4B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		970C0DE915633D9000B9D4B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		970C0DEB15633D9000B9D4B2 /* EventsViewController.h */ = {isa = PBXFileReference; path = EventsViewController.h; sourceTree = "<group>"; };
+		970C0DEB15633D9000B9D4B2 /* EventsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
 		970C0DEC15633D9000B9D4B2 /* EventsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
 		970C0DEF15633D9000B9D4B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/EventsViewController.xib; sourceTree = "<group>"; };
 		970C0DF615633F9D00B9D4B2 /* AddEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventViewController.h; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		970C0DCA15633D9000B9D4B2 = {
 			isa = PBXGroup;
 			children = (
-				970C0DDF15633D9000B9D4B2 /* ObjC2-Week3 */,
+				970C0DDF15633D9000B9D4B2 /* ObjC2-Week4 */,
 				970C0DD815633D9000B9D4B2 /* Frameworks */,
 				970C0DD615633D9000B9D4B2 /* Products */,
 			);
@@ -64,7 +64,7 @@
 		970C0DD615633D9000B9D4B2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				970C0DD515633D9000B9D4B2 /* ObjC2-Week3.app */,
+				970C0DD515633D9000B9D4B2 /* ObjC2-Week4.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,7 +79,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		970C0DDF15633D9000B9D4B2 /* ObjC2-Week3 */ = {
+		970C0DDF15633D9000B9D4B2 /* ObjC2-Week4 */ = {
 			isa = PBXGroup;
 			children = (
 				970C0DE815633D9000B9D4B2 /* AppDelegate.h */,
@@ -92,16 +92,17 @@
 				970C0DF815633F9D00B9D4B2 /* AddEventViewController.xib */,
 				970C0DE015633D9000B9D4B2 /* Supporting Files */,
 			);
+			name = "ObjC2-Week4";
 			path = "ObjC2-Week3";
 			sourceTree = "<group>";
 		};
 		970C0DE015633D9000B9D4B2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				970C0DE115633D9000B9D4B2 /* ObjC2-Week3-Info.plist */,
+				970C0DE115633D9000B9D4B2 /* ObjC2-Week4-Info.plist */,
 				970C0DE215633D9000B9D4B2 /* InfoPlist.strings */,
 				970C0DE515633D9000B9D4B2 /* main.m */,
-				970C0DE715633D9000B9D4B2 /* ObjC2-Week3-Prefix.pch */,
+				970C0DE715633D9000B9D4B2 /* ObjC2-Week4-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -109,9 +110,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		970C0DD415633D9000B9D4B2 /* ObjC2-Week3 */ = {
+		970C0DD415633D9000B9D4B2 /* ObjC2-Week4 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 970C0DF315633D9000B9D4B2 /* Build configuration list for PBXNativeTarget "ObjC2-Week3" */;
+			buildConfigurationList = 970C0DF315633D9000B9D4B2 /* Build configuration list for PBXNativeTarget "ObjC2-Week4" */;
 			buildPhases = (
 				970C0DD115633D9000B9D4B2 /* Sources */,
 				970C0DD215633D9000B9D4B2 /* Frameworks */,
@@ -121,9 +122,9 @@
 			);
 			dependencies = (
 			);
-			name = "ObjC2-Week3";
+			name = "ObjC2-Week4";
 			productName = "ObjC2-Week3";
-			productReference = 970C0DD515633D9000B9D4B2 /* ObjC2-Week3.app */;
+			productReference = 970C0DD515633D9000B9D4B2 /* ObjC2-Week4.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -134,7 +135,7 @@
 			attributes = {
 				LastUpgradeCheck = 0430;
 			};
-			buildConfigurationList = 970C0DCF15633D9000B9D4B2 /* Build configuration list for PBXProject "ObjC2-Week3" */;
+			buildConfigurationList = 970C0DCF15633D9000B9D4B2 /* Build configuration list for PBXProject "ObjC2-Week4" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -146,7 +147,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				970C0DD415633D9000B9D4B2 /* ObjC2-Week3 */,
+				970C0DD415633D9000B9D4B2 /* ObjC2-Week4 */,
 			);
 		};
 /* End PBXProject section */
@@ -247,9 +248,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ObjC2-Week3/ObjC2-Week3-Prefix.pch";
-				INFOPLIST_FILE = "ObjC2-Week3/ObjC2-Week3-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "ObjC2-Week3/ObjC2-Week4-Prefix.pch";
+				INFOPLIST_FILE = "ObjC2-Week3/ObjC2-Week4-Info.plist";
+				PRODUCT_NAME = "ObjC2-Week4";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -258,9 +259,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ObjC2-Week3/ObjC2-Week3-Prefix.pch";
-				INFOPLIST_FILE = "ObjC2-Week3/ObjC2-Week3-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "ObjC2-Week3/ObjC2-Week4-Prefix.pch";
+				INFOPLIST_FILE = "ObjC2-Week3/ObjC2-Week4-Info.plist";
+				PRODUCT_NAME = "ObjC2-Week4";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -268,7 +269,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		970C0DCF15633D9000B9D4B2 /* Build configuration list for PBXProject "ObjC2-Week3" */ = {
+		970C0DCF15633D9000B9D4B2 /* Build configuration list for PBXProject "ObjC2-Week4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				970C0DF115633D9000B9D4B2 /* Debug */,
@@ -277,13 +278,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		970C0DF315633D9000B9D4B2 /* Build configuration list for PBXNativeTarget "ObjC2-Week3" */ = {
+		970C0DF315633D9000B9D4B2 /* Build configuration list for PBXNativeTarget "ObjC2-Week4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				970C0DF415633D9000B9D4B2 /* Debug */,
 				970C0DF515633D9000B9D4B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

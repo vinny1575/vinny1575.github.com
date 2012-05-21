@@ -12,5 +12,6 @@
 
 - (IBAction)addEvent:(id)sender;
 @property (strong, nonatomic) IBOutlet UITextView *eventsTxtView;
+- (IBAction)saveBtn:(id)sender;
 
 @end
