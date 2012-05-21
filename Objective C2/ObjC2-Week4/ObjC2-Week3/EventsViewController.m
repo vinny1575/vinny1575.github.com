@@ -25,7 +25,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *eventText = [defaults stringForKey:@"savedEvents"];
+    if (eventText.length > 0) {
+        eventsTxtView.text = eventText;
+    }
 }
+
 
 - (void)viewDidUnload
 {
@@ -47,6 +54,8 @@
 }
 
 - (IBAction)saveBtn:(id)sender {
-    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setValue:[NSString stringWithFormat:eventsTxtView.text] forKey:@"savedEvents"];
+    [defaults synchronize];
 }
 @end
