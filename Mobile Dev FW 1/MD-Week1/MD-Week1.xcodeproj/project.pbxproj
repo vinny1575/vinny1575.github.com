@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		9746DC6A15769EFA0073E1A3 /* food.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9746DC6915769EFA0073E1A3 /* food.csv */; };
 		9746DC6E1576A1B00073E1A3 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9746DC6D1576A1B00073E1A3 /* SecondViewController.m */; };
+		9746DC741576A5680073E1A3 /* food copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746DC731576A5680073E1A3 /* food copy.png */; };
+		9746DC761576A5780073E1A3 /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746DC751576A5780073E1A3 /* food.png */; };
+		9746DC781576A5AB0073E1A3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746DC771576A5AB0073E1A3 /* Default.png */; };
+		9746DC7A1576A5AD0073E1A3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9746DC791576A5AD0073E1A3 /* Default@2x.png */; };
 		9758B10915766765000DC858 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9758B10815766765000DC858 /* UIKit.framework */; };
 		9758B10B15766765000DC858 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9758B10A15766765000DC858 /* Foundation.framework */; };
 		9758B10D15766765000DC858 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9758B10C15766765000DC858 /* CoreGraphics.framework */; };
@@ -25,6 +29,10 @@
 		9746DC6915769EFA0073E1A3 /* food.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = food.csv; sourceTree = "<group>"; };
 		9746DC6C1576A1B00073E1A3 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		9746DC6D1576A1B00073E1A3 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		9746DC731576A5680073E1A3 /* food copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "food copy.png"; sourceTree = "<group>"; };
+		9746DC751576A5780073E1A3 /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food.png; sourceTree = "<group>"; };
+		9746DC771576A5AB0073E1A3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		9746DC791576A5AD0073E1A3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		9758B10415766765000DC858 /* MD-Week1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MD-Week1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9758B10815766765000DC858 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9758B10A15766765000DC858 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,6 +68,10 @@
 		9758B0F915766764000DC858 = {
 			isa = PBXGroup;
 			children = (
+				9746DC791576A5AD0073E1A3 /* Default@2x.png */,
+				9746DC771576A5AB0073E1A3 /* Default.png */,
+				9746DC751576A5780073E1A3 /* food.png */,
+				9746DC731576A5680073E1A3 /* food copy.png */,
 				9758B10E15766765000DC858 /* MD-Week1 */,
 				9758B10715766765000DC858 /* Frameworks */,
 				9758B10515766765000DC858 /* Products */,
@@ -168,6 +180,10 @@
 				9758B11C15766765000DC858 /* MainStoryboard.storyboard in Resources */,
 				9758B13015769DC4000DC858 /* star.png in Resources */,
 				9746DC6A15769EFA0073E1A3 /* food.csv in Resources */,
+				9746DC741576A5680073E1A3 /* food copy.png in Resources */,
+				9746DC761576A5780073E1A3 /* food.png in Resources */,
+				9746DC781576A5AB0073E1A3 /* Default.png in Resources */,
+				9746DC7A1576A5AD0073E1A3 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
