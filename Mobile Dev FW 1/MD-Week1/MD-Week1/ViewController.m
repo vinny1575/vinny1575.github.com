@@ -85,7 +85,8 @@
     }
 }
 
--(void)tableView:(UITableView *)tableView didEndEditingRowAtIndexPath:(NSIndexPath *)indexPath{
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    
     [foodArray removeObjectAtIndex:indexPath.row];
     [tableView reloadData];
 }
