@@ -27,7 +27,7 @@
 
 - (void)viewDidLoad
 {
-    
+    //I decided to use a csv file so that I can change my list easily.
     NSString *fileString = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"food" ofType:@"csv"] encoding:NSUTF8StringEncoding error:nil];
     foodArray = [NSMutableArray arrayWithArray:[fileString componentsSeparatedByString:@","]];
     [super viewDidLoad];
@@ -58,8 +58,11 @@
     return foodArray.count;
 }
 
+//setup each cell one by one
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    //use the identifier I set.
     static NSString *CellIdentifier = @"myCell";
+    //use custom class
     Cell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[Cell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
