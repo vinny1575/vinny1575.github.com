@@ -75,7 +75,10 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [self performSegueWithIdentifier:@"trans" sender:self];
 }
+
+//Custom edit button
 - (IBAction)editBtn:(id)sender {
+    //if the table is in editing mode it closes it out and visa versa.
     if (!myTableView.editing) {
         [(UIButton*)sender setTitle:@"Done" forState:UIControlStateNormal];
         [myTableView setEditing:YES animated:YES];
@@ -86,7 +89,7 @@
 }
 
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    //removes itm fromt eh array and reloads the table
     [foodArray removeObjectAtIndex:indexPath.row];
     [tableView reloadData];
 }
