@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SecondViewController : UIViewController
+- (IBAction)dateValueChanged:(id)sender;
+@property (strong, nonatomic) IBOutlet UITextField *textBox;
 
 @end

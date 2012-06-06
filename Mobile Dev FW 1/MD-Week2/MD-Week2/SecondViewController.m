@@ -13,6 +13,7 @@
 @end
 
 @implementation SecondViewController
+@synthesize textBox;
 
 - (void)viewDidLoad
 {
@@ -22,6 +23,7 @@
 
 - (void)viewDidUnload
 {
+    [self setTextBox:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -31,4 +33,9 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (IBAction)dateValueChanged:(id)sender {
+    UIDatePicker *datePicker = sender;
+    NSDate *date = datePicker.date;
+    [textBox setText:date.description];
+}
 @end
