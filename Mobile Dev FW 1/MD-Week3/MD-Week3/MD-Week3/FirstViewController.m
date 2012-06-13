@@ -8,6 +8,7 @@
 
 #import "FirstViewController.h"
 #import "BussinessObj.h"
+#import "SecondViewController.h"
 
 @interface FirstViewController ()
 
@@ -28,6 +29,7 @@
 {
     [super viewDidLoad];
 
+    bussinesses = [NSMutableArray new];
     //add objects
     BussinessObj *bussinessObj = [BussinessObj new];
     bussinessObj.bussinessName = @"ACME Lumber";
@@ -35,51 +37,67 @@
     bussinessObj.longitute = -81.650391;
     [bussinesses addObject:bussinessObj];
     
+    bussinessObj = [BussinessObj new];
     bussinessObj.bussinessName = @"ACME Electric";
     bussinessObj.latitude = 30.372875;
     bussinessObj.longitute = -82.089844;
     [bussinesses addObject:bussinessObj];
     
+    bussinessObj = [BussinessObj new];
     bussinessObj.bussinessName = @"ACME Sewage";
     bussinessObj.latitude = 30.263812;
     bussinessObj.longitute = -81.532288;
     [bussinesses addObject:bussinessObj];
     
+    bussinessObj = [BussinessObj new];
     bussinessObj.bussinessName = @"ACME Co";
     bussinessObj.latitude = 30.17125;
     bussinessObj.longitute = -81.650391;
     [bussinesses addObject:bussinessObj];
     
+    bussinessObj = [BussinessObj new];
     bussinessObj.bussinessName = @"ACME Water";
     bussinessObj.latitude = 30.211608;
     bussinessObj.longitute = -81.719055;
     [bussinesses addObject:bussinessObj];
     
+    bussinessObj = [BussinessObj new];
     bussinessObj.bussinessName = @"ACME Plumbing";
     bussinessObj.latitude = 30.002517;
     bussinessObj.longitute = -81.812439;
     [bussinesses addObject:bussinessObj];
     
+    bussinessObj = [BussinessObj new];
     bussinessObj.bussinessName = @"ACME Hardware";
     bussinessObj.latitude = 30.512583;
     bussinessObj.longitute = -81.743774;
     [bussinesses addObject:bussinessObj];
     
+    bussinessObj = [BussinessObj new];
     bussinessObj.bussinessName = @"ACME Outlet";
     bussinessObj.latitude = 30.346806;
     bussinessObj.longitute = -81.463623;
     [bussinesses addObject:bussinessObj];
     
+    bussinessObj = [BussinessObj new];
     bussinessObj.bussinessName = @"ACME Pets";
     bussinessObj.latitude = 30.076225;
     bussinessObj.longitute = -81.559753;
     [bussinesses addObject:bussinessObj];
     
+    bussinessObj = [BussinessObj new];
     bussinessObj.bussinessName = @"ACME Department";
     bussinessObj.latitude = 30.462879;
     bussinessObj.longitute = -81.903076;
     [bussinesses addObject:bussinessObj];
     
+    [[self tableView] reloadData];
+    
+    map = [MapViewController new];
+    map.bussinesses = bussinesses;
+    
+    SecondViewController *secView = [self.tabBarController.viewControllers objectAtIndex:1];
+    secView.bussinesses = bussinesses;
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -103,16 +121,13 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+{    // Return the number of rows in the section.
+    return bussinesses.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -121,6 +136,9 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     // Configure the cell...
+    BussinessObj *obj = [bussinesses objectAtIndex:indexPath.row];
+    NSLog(@"bussiness name %@", obj.bussinessName);
+    cell.textLabel.text = obj.bussinessName;
     
     return cell;
 }

@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MapViewController.h"
 
 @interface FirstViewController : UITableViewController{
     NSMutableArray *bussinesses;
+    MapViewController *map;
 }
 
 @end

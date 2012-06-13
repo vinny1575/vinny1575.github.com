@@ -13,7 +13,7 @@
 @end
 
 @implementation MapViewController
-
+@synthesize bussinesses;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

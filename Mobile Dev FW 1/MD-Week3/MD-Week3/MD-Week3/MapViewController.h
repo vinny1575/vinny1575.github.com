@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface MapViewController : UIViewController
+@property (nonatomic, strong)  NSMutableArray *bussinesses;
 
 @end

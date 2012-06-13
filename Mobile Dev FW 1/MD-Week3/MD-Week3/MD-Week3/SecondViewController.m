@@ -13,6 +13,7 @@
 @end
 
 @implementation SecondViewController
+@synthesize bussinesses;
 
 - (void)viewDidLoad
 {
