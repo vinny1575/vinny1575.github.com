@@ -15,4 +15,5 @@
 @property(nonatomic, strong)  NSMutableArray *bussinesses;
 @property (strong, nonatomic) IBOutlet MKMapView *myMapView;
 
+-(void)zoomToFitMapAnnotations;
 @end

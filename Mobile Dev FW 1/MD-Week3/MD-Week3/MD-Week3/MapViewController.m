@@ -15,6 +15,9 @@
 @implementation MapViewController
 @synthesize bussiness;
 @synthesize myMapView;
+@synthesize name;
+@synthesize lat;
+@synthesize lon;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -64,6 +67,9 @@
 - (void)viewDidUnload
 {
     [self setMyMapView:nil];
+    [self setName:nil];
+    [self setLat:nil];
+    [self setLon:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

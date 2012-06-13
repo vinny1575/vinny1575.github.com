@@ -14,5 +14,8 @@
 @interface MapViewController : UIViewController <MKMapViewDelegate>
 @property (nonatomic, strong)  BussinessObj *bussiness;
 @property (strong, nonatomic) IBOutlet MKMapView *myMapView;
+@property (strong, nonatomic) IBOutlet UILabel *name;
+@property (strong, nonatomic) IBOutlet UILabel *lat;
+@property (strong, nonatomic) IBOutlet UILabel *lon;
 
 @end
