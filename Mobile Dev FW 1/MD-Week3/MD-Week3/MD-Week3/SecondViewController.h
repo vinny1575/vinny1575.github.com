@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "BussinessObj.h"
+#import <Mapkit/Mapkit.h>
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController<MKMapViewDelegate>
 
 @property(nonatomic, strong)  NSMutableArray *bussinesses;
+@property (strong, nonatomic) IBOutlet MKMapView *myMapView;
 
 @end
