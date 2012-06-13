@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "MapViewController.h"
+#import "BussinessObj.h"
 
 @interface FirstViewController : UITableViewController{
     NSMutableArray *bussinesses;
     MapViewController *map;
+    BussinessObj *bussiness;
 }
 
 @end

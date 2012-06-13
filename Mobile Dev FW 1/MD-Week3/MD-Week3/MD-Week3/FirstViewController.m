@@ -93,9 +93,6 @@
     
     [[self tableView] reloadData];
     
-    map = [MapViewController new];
-    map.bussinesses = bussinesses;
-    
     SecondViewController *secView = [self.tabBarController.viewControllers objectAtIndex:1];
     secView.bussinesses = bussinesses;
     // Uncomment the following line to preserve selection between presentations.
@@ -193,6 +190,13 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+    bussiness = [bussinesses objectAtIndex:indexPath.row];
+    
+    [self performSegueWithIdentifier:@"map" sender:self];
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    map = [segue destinationViewController];
+    map.bussiness = bussiness;
+}
 @end

@@ -89,13 +89,19 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="kGo-hd-8ET">
-                                <rect key="frame" x="0.0" y="-5" width="320" height="367"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="VMF-YY-PbT" id="xfe-r5-hBd"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="u2w-14-rjh"/>
+                    <connections>
+                        <outlet property="myMapView" destination="kGo-hd-8ET" id="l0T-fj-mQs"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1593" y="-134"/>
@@ -125,17 +131,6 @@
         <image name="first.png" width="30" height="30"/>
         <image name="second.png" width="30" height="30"/>
     </resources>
-    <classes>
-        <class className="FirstViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
-        </class>
-        <class className="MapViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MapViewController.h"/>
-        </class>
-        <class className="SecondViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SecondViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

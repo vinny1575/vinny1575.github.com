@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BussinessObj.h"
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface MapViewController : UIViewController
-@property (nonatomic, strong)  NSMutableArray *bussinesses;
+@interface MapViewController : UIViewController <MKMapViewDelegate>
+@property (nonatomic, strong)  BussinessObj *bussiness;
+@property (strong, nonatomic) IBOutlet MKMapView *myMapView;
 
 @end

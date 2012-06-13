@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BussinessObj.h"
 
 @interface SecondViewController : UIViewController
 
