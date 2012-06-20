@@ -28,6 +28,7 @@
 {
     [super viewDidLoad];
     
+    //change text of the textview to the sent string
     textView.text = text;
 	// Do any additional setup after loading the view.
 }

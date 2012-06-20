@@ -25,6 +25,8 @@
     //Once you create a URL,you are ready make a request.
     
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    //use url request to load webview
     [webView loadRequest:request];
 	// Do any additional setup after loading the view, typically from a nib.
 }
