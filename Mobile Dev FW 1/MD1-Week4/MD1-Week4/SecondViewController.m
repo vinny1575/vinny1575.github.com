@@ -13,15 +13,25 @@
 @end
 
 @implementation SecondViewController
+@synthesize webView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //first you need to create a URL using String.
+    
+    NSURL *url = [NSURL URLWithString:@"http://cagt.bu.edu/w/images/c/c9/Mygarden.txt"];
+    
+    //Once you create a URL,you are ready make a request.
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [webView loadRequest:request];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)viewDidUnload
 {
+    [self setWebView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

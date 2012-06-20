@@ -64,12 +64,18 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+-(void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict{
+    element = [NSMutableString string];
+}
+
 - (void)parser:(NSXMLParser *)parser
  didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI
  qualifiedName:(NSString *)qName {
     
     NSLog(@"Found an element named: %@ with a value of: %@", elementName, element);
-          
+    if ([elementName isEqualToString:@"string"]) {
+        [array addObject:element];
+    }      
 }
 
 //appending string
@@ -83,7 +89,10 @@ element = [[NSMutableString alloc] init];
 [element appendString:string];
 
 }          
-          
+   
+-(void)parserDidEndDocument:(NSXMLParser *)parser{
+    [[self tableView] reloadData];
+}
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -100,16 +109,14 @@ element = [[NSMutableString alloc] init];
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return array.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -118,7 +125,7 @@ element = [[NSMutableString alloc] init];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     // Configure the cell...
-    
+    cell.textLabel.text = [array objectAtIndex:indexPath.row];
     return cell;
 }
 
