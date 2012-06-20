@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
 
 @interface FirstViewControllerViewController : UITableViewController <NSXMLParserDelegate>{
     NSMutableArray *array;
+    NSMutableArray *elementArray;
     NSMutableString *element;
+    NSString *sentString;
 }
 
 @end

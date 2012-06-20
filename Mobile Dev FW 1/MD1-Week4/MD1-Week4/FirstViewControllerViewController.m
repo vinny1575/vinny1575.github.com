@@ -28,6 +28,7 @@
     [super viewDidLoad];
 
     array = [NSMutableArray new];
+    elementArray = [NSMutableArray new];
     
     //first you need to create a URL using String.
     
@@ -75,6 +76,7 @@
     NSLog(@"Found an element named: %@ with a value of: %@", elementName, element);
     if ([elementName isEqualToString:@"string"]) {
         [array addObject:element];
+        [elementArray addObject:elementName];
     }      
 }
 
@@ -179,6 +181,14 @@ element = [[NSMutableString alloc] init];
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+    sentString = [NSString stringWithFormat:@"<%@>%@</%@>", [elementArray objectAtIndex:indexPath.row], [array objectAtIndex:indexPath.row], [elementArray objectAtIndex:indexPath.row]];
+    
+    [self performSegueWithIdentifier:@"seg" sender:self];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    ViewController *viewCon = segue.destinationViewController;
+    viewCon.text = sentString;
 }
 
 @end

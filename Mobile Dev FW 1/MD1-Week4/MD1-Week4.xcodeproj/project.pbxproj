@@ -20,6 +20,7 @@
 		97A20EA115921FDE00E148A5 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 97A20EA015921FDE00E148A5 /* second.png */; };
 		97A20EA315921FDE00E148A5 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97A20EA215921FDE00E148A5 /* second@2x.png */; };
 		97A20EAB1592203300E148A5 /* FirstViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A20EAA1592203300E148A5 /* FirstViewControllerViewController.m */; };
+		97A20EAE15922A2B00E148A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A20EAD15922A2B00E148A5 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		97A20EA215921FDE00E148A5 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		97A20EA91592203300E148A5 /* FirstViewControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewControllerViewController.h; sourceTree = "<group>"; };
 		97A20EAA1592203300E148A5 /* FirstViewControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewControllerViewController.m; sourceTree = "<group>"; };
+		97A20EAC15922A2B00E148A5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		97A20EAD15922A2B00E148A5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				97A20E9315921FDE00E148A5 /* MainStoryboard.storyboard */,
 				97A20EA91592203300E148A5 /* FirstViewControllerViewController.h */,
 				97A20EAA1592203300E148A5 /* FirstViewControllerViewController.m */,
+				97A20EAC15922A2B00E148A5 /* ViewController.h */,
+				97A20EAD15922A2B00E148A5 /* ViewController.m */,
 				97A20E9915921FDE00E148A5 /* first.png */,
 				97A20E9B15921FDE00E148A5 /* first@2x.png */,
 				97A20E9D15921FDE00E148A5 /* SecondViewController.h */,
@@ -185,6 +190,7 @@
 				97A20E9215921FDE00E148A5 /* AppDelegate.m in Sources */,
 				97A20E9F15921FDE00E148A5 /* SecondViewController.m in Sources */,
 				97A20EAB1592203300E148A5 /* FirstViewControllerViewController.m in Sources */,
+				97A20EAE15922A2B00E148A5 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
