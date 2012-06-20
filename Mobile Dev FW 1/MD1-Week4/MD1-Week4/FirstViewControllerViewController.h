@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewControllerViewController : UITableViewController{
+@interface FirstViewControllerViewController : UITableViewController <NSXMLParserDelegate>{
     NSMutableArray *array;
+    NSMutableString *element;
 }
 
 @end

@@ -49,6 +49,14 @@
     //Convert the response data into response String.
     
     NSString *responseString  = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+    
+    NSLog(@"%@", responseString);
+    
+    //parse xml
+    NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData:responseData];
+    [xmlParser setDelegate:self];
+    [xmlParser parse];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -56,6 +64,26 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+- (void)parser:(NSXMLParser *)parser
+ didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI
+ qualifiedName:(NSString *)qName {
+    
+    NSLog(@"Found an element named: %@ with a value of: %@", elementName, element);
+          
+}
+
+//appending string
+- (void)parser:(NSXMLParser *)parser
+foundCharacters:(NSString *)string {
+
+if(element == nil){
+element = [[NSMutableString alloc] init];
+}
+
+[element appendString:string];
+
+}          
+          
 - (void)viewDidUnload
 {
     [super viewDidUnload];
