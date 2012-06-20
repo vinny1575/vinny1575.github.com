@@ -34,6 +34,10 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated{
+    name.text = bussiness.bussinessName;
+    lat.text = [NSString stringWithFormat:@"%f", bussiness.latitude]; 
+    lon.text = [NSString stringWithFormat:@"%f", bussiness.longitute]; 
+    
     CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(bussiness.latitude, bussiness.longitute);
     
     MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
