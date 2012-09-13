@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
 @interface ItemViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UITextField *itemTitle;
 
 @property(nonatomic, strong)NSMutableArray *data;
+@property(nonatomic, strong)NSMutableDictionary *fillData;
 - (IBAction)done:(id)sender;
 @property (strong, nonatomic) IBOutlet UIButton *setTime;
 - (IBAction)timeChanged:(id)sender;

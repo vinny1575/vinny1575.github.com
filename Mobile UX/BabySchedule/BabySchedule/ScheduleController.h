@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
-@interface ScheduleController : UITableViewController
+@interface ScheduleController : UITableViewController{
+    
+}
 - (IBAction)addItem:(id)sender;
+@property (nonatomic, strong) NSMutableDictionary *sendData;
 @property (nonatomic, strong) NSMutableArray *data;
+@property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 
 @end

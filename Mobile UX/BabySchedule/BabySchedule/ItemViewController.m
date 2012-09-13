@@ -16,7 +16,7 @@
 @synthesize timeLabel;
 @synthesize datePicker;
 @synthesize setTime;
-@synthesize itemTitle,data;
+@synthesize itemTitle,data, fillData;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,17 +34,27 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated{
-    NSDate *time = [datePicker date];
-    
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"hh:mm a"];
     
     //Optionally for time zone converstions
     [formatter setTimeZone:[NSTimeZone timeZoneWithName:@"..."]];
-    
-    NSString *stringFromDate = [formatter stringFromDate:time];
-    
-    timeLabel.text = stringFromDate;
+    if (fillData == nil) {
+        NSDate *time = [datePicker date];
+        
+        NSString *stringFromDate = [formatter stringFromDate:time];
+        
+        timeLabel.text = stringFromDate;
+    }else{
+        NSString *tempTitle = (NSString*)[fillData objectForKey:@"title"];
+        NSString *tempTime = (NSString*)[fillData objectForKey:@"time"];
+        NSDate *time = [formatter dateFromString:tempTime];
+        
+        [datePicker setDate:time];
+        [timeLabel setText:tempTime];
+        [itemTitle setText:tempTitle];
+    }
+
 }
 
 - (void)viewDidUnload
@@ -69,7 +79,30 @@
     
     [data addObject:saveData];
     
+    NSManagedObjectContext *context = [(AppDelegate*)[[UIApplication sharedApplication] delegate] managedObjectContext];
+    NSManagedObject *saveCD = [NSEntityDescription
+                                       insertNewObjectForEntityForName:@"Data"
+                                       inManagedObjectContext:context];
+    [saveCD setValue:itemTitle.text forKey:@"detail"];
+    [saveCD setValue:timeLabel.text forKey:@"time"];
+    
+    NSError *error;
+    if (![context save:&error]) {
+        NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+    }
+    
+    
     [self.navigationController popViewControllerAnimated:YES];
+    
+    UILocalNotification *not = [[UILocalNotification alloc] init];
+    [not setFireDate:datePicker.date];
+    [not setAlertAction:@"View Event"];
+    [not setTimeZone:[NSTimeZone defaultTimeZone]];
+    [not setAlertBody:itemTitle.text];
+    not.soundName = UILocalNotificationDefaultSoundName;
+    not.applicationIconBadgeNumber = -1;
+    
+    [[UIApplication sharedApplication] scheduleLocalNotification:not];
 }
 - (IBAction)timeChanged:(id)sender {
     NSDate *time = [datePicker date];
@@ -77,8 +110,6 @@
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"hh:mm a"];
     
-    //Optionally for time zone converstions
-    [formatter setTimeZone:[NSTimeZone timeZoneWithName:@"..."]];
     
     NSString *stringFromDate = [formatter stringFromDate:time];
     

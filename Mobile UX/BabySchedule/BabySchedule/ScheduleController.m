@@ -15,7 +15,7 @@
 
 @implementation ScheduleController
 
-@synthesize data;
+@synthesize data, fetchedResultsController, managedObjectContext, sendData;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -31,6 +31,22 @@
     [super viewDidLoad];
 
     data = [NSMutableArray array];
+    
+    NSManagedObjectContext *context = [(AppDelegate*)[[UIApplication sharedApplication] delegate] managedObjectContext];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription
+                                   entityForName:@"Data" inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    NSError *error;
+    NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
+    for (NSManagedObject *info in fetchedObjects) {
+        NSMutableDictionary *currentData = [[NSMutableDictionary alloc] init];
+        [currentData setObject:[info valueForKey:@"detail"] forKey:@"title"];
+        [currentData setObject:[info valueForKey:@"time"] forKey:@"time"];
+        NSLog(@"detail: %@", [info valueForKey:@"detail"]);
+        NSLog(@"time: %@", [info valueForKey:@"time"]);
+        [data addObject:currentData];
+    }
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -82,6 +98,8 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     [self.tableView reloadData];
+//    sendData = [[NSMutableDictionary alloc] init];
+//    sendData = nil;
 }
 
 /*
@@ -134,6 +152,9 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+    sendData = [data objectAtIndex:indexPath.row];
+    [self performSegueWithIdentifier:@"item" sender:self];
+
 }
 
 - (IBAction)addItem:(id)sender {
@@ -142,5 +163,7 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     ItemViewController *itemVCon = segue.destinationViewController;
     itemVCon.data = self.data;
+    itemVCon.fillData = sendData;
+//    cell.detailTextLabel.text = (NSString*)[sendData objectForKey:@"time"];
 }
 @end
