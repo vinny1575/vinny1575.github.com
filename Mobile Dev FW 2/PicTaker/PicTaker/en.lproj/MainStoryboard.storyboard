@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C54" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Bsi-lJ-e4C">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - Picture/Video Taker-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXh-0h-kJk">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="Am6-O8-GYi"/>
+                                    <constraint firstAttribute="width" constant="65" id="XYV-NC-6fS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Video" image="video.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="KNq-FP-9BA" kind="push" id="Wrv-kn-NpF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2j-t1-9D1">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="dPw-2O-aTm"/>
+                                    <constraint firstAttribute="height" constant="76" id="f8A-Ol-3RO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Picture" image="images.jpeg">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sHa-Ma-tYF" kind="push" id="SeX-SO-kJi"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jEN-kW-1hZ">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="5GG-vu-bHY"/>
+                                    <constraint firstAttribute="height" constant="124" id="ald-d9-Sof"/>
+                                </constraints>
+                                <string key="text">This app is a simple picture/video taking app. Simply click on the respective button and follow the prompts. When you are through either taking a picture or a video simply press save or cancel. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAv-oY-8vg">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Photo Album">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="album:" destination="2" eventType="touchUpInside" id="pHq-YR-X12"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OAv-oY-8vg" firstAttribute="centerX" secondItem="BXh-0h-kJk" secondAttribute="centerX" type="default" id="2Gq-Zd-xKr"/>
+                            <constraint firstItem="B2j-t1-9D1" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="FoD-aG-1mY"/>
+                            <constraint firstItem="B2j-t1-9D1" firstAttribute="top" secondItem="3" secondAttribute="top" constant="198" id="GtK-q3-AtA"/>
+                            <constraint firstItem="BXh-0h-kJk" firstAttribute="top" secondItem="3" secondAttribute="top" constant="98" id="HtM-hr-Adl"/>
+                            <constraint firstAttribute="bottom" secondItem="jEN-kW-1hZ" secondAttribute="bottom" constant="69" id="Ig2-bJ-2Ct"/>
+                            <constraint firstItem="OAv-oY-8vg" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="KJw-yZ-q7e"/>
+                            <constraint firstItem="jEN-kW-1hZ" firstAttribute="centerX" secondItem="B2j-t1-9D1" secondAttribute="centerX" type="default" id="VO7-uW-UgR"/>
+                            <constraint firstItem="BXh-0h-kJk" firstAttribute="centerX" secondItem="B2j-t1-9D1" secondAttribute="centerX" type="default" id="uSe-T4-3g8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Picture/Video Taker" id="xdF-0f-NO1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664" y="70"/>
+        </scene>
+        <!--Picture View Controller - Picture-->
+        <scene sceneID="KWj-Z1-8yF">
+            <objects>
+                <viewController id="sHa-Ma-tYF" customClass="PictureViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fSL-Z7-VDc">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="spO-Fg-y4y">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="301" id="FMH-tH-0xY"/>
+                                    <constraint firstAttribute="height" constant="267" id="LIP-4B-6rz"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tA-Q9-WHM">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="save:" destination="sHa-Ma-tYF" eventType="touchUpInside" id="oR6-2K-Jig"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hv-xB-0p7">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel:" destination="sHa-Ma-tYF" eventType="touchUpInside" id="dUP-iO-AGm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="3tA-Q9-WHM" secondAttribute="bottom" constant="143" id="59r-ta-DLd"/>
+                            <constraint firstItem="3tA-Q9-WHM" firstAttribute="centerX" secondItem="spO-Fg-y4y" secondAttribute="centerX" type="default" id="7PY-0B-SgY"/>
+                            <constraint firstItem="spO-Fg-y4y" firstAttribute="top" secondItem="fSL-Z7-VDc" secondAttribute="top" constant="8" id="9X9-wd-4Kf"/>
+                            <constraint firstItem="3tA-Q9-WHM" firstAttribute="centerX" secondItem="3hv-xB-0p7" secondAttribute="centerX" type="default" id="HuD-Dh-U1C"/>
+                            <constraint firstAttribute="bottom" secondItem="3hv-xB-0p7" secondAttribute="bottom" constant="83" id="Zgz-o3-rrd"/>
+                            <constraint firstItem="3hv-xB-0p7" firstAttribute="centerX" secondItem="fSL-Z7-VDc" secondAttribute="centerX" type="default" id="zE8-dE-Pyq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Picture" id="Pro-l9-L0S"/>
+                    <connections>
+                        <outlet property="imageView" destination="spO-Fg-y4y" id="miG-cN-zu3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aRK-4k-LOH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092" y="529"/>
+        </scene>
+        <!--Video View Controller - Video-->
+        <scene sceneID="k4Q-3T-442">
+            <objects>
+                <viewController id="KNq-FP-9BA" customClass="VideoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tM9-Pc-Spc">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zf-ne-JCN">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="save:" destination="KNq-FP-9BA" eventType="touchUpInside" id="VSu-s4-i26"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTi-LZ-bWe">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel:" destination="KNq-FP-9BA" eventType="touchUpInside" id="cNH-hD-mdX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vTi-LZ-bWe" firstAttribute="centerX" secondItem="3zf-ne-JCN" secondAttribute="centerX" type="default" id="Aoe-qG-exM"/>
+                            <constraint firstAttribute="bottom" secondItem="vTi-LZ-bWe" secondAttribute="bottom" constant="194" id="GvV-ja-eyU"/>
+                            <constraint firstItem="3zf-ne-JCN" firstAttribute="centerX" secondItem="tM9-Pc-Spc" secondAttribute="centerX" type="default" id="hha-xQ-AHM"/>
+                            <constraint firstItem="3zf-ne-JCN" firstAttribute="top" secondItem="tM9-Pc-Spc" secondAttribute="top" constant="192" id="jgQ-FW-qQm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Video" id="g7a-Ma-4bn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RFg-UA-9ie" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092" y="-174"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="av2-jF-2wc">
+            <objects>
+                <navigationController id="Bsi-lJ-e4C" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kec-BN-PjF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="iwa-db-HDi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IUT-v9-alG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="200" y="78"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="images.jpeg" width="102" height="102"/>
+        <image name="video.png" width="256" height="256"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
